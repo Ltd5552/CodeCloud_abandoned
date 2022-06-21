@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("./code.txt")
+	file, err := os.Open("/root/codecloud/workplace/code.txt")
 	if err != nil {
 		fmt.Println("open file failed!, err:", err)
 		return

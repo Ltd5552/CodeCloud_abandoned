@@ -24,7 +24,7 @@ func ResultCmd() {
 		fmt.Println("删除成功！")
 	}
 
-	ResultCmd := "docker container logs code >>code.txt"
+	ResultCmd := "docker container logs code >>/root/codecloud/workplace/code.txt"
 	for {
 		cmd = exec.Command("/bin/sh", "-c", ResultCmd)
 		err := cmd.Run()
