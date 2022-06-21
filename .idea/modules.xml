@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CodeCloud.iml" filepath="$PROJECT_DIR$/.idea/CodeCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../goland/project/src/beego_learn/.idea/beego_learn.iml" filepath="$PROJECT_DIR$/../../../../goland/project/src/beego_learn/.idea/beego_learn.iml" />
     </modules>
   </component>
 </project>
