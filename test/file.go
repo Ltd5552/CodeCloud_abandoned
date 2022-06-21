@@ -15,7 +15,6 @@ func main() {
 	defer func(file *os.File) {
 		err := file.Close()
 		if err != nil {
-
 		}
 	}(file)
 	// 使用Read方法读取数据
