@@ -23,6 +23,9 @@ func init() {
 	// 这里不要使用:=由于是给全局变量db赋值，然后在main函数中使用全局变量db
 	db, _ = sql.Open("mysql", datasource)
 	// 尝试与数据库建立连接（这里会校验dsn内容是否正确）
-	db.Ping()
+	err := db.Ping()
+	if err != nil {
+		return
+	}
 
 }

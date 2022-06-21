@@ -12,7 +12,12 @@ func main() {
 		fmt.Println("open file failed!, err:", err)
 		return
 	}
-	defer file.Close()
+	defer func(file *os.File) {
+		err := file.Close()
+		if err != nil {
+
+		}
+	}(file)
 	// 使用Read方法读取数据
 	var tmp = make([]byte, 128)
 	n, err := file.Read(tmp)
