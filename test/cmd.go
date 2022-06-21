@@ -42,5 +42,4 @@ func main() {
 		return
 	}
 	fmt.Printf("stdout: %s", bytes)
-
 }
